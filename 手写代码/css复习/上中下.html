@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    html,
+    body {
+      height: 100%;
+    }
+    
+    .wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .header,
+    .footer {
+      /* height: 40px; */
+      /* line-height: 40px; */
+      background-color: #d8d8d8;
+      text-align: center;
+    }
+    
+    .main {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      width: 100%;
+      height: calc(100% - 80px);
+      overflow-y: auto;
+    }
+    
+    .box1 {
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ccc;
+      display: none;
+    }
+    
+    .box2 {
+      height: 50%;
+      width: 50%;
+      background-color: red;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">header</div>
+    <div class="main">
+      <button>test</button>
+      <br />中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 <br
+      /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域
+      <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域 中间区域 <br /> 中间区域
+    </div>
+    <div class="footer">
+      <div class="box1">
+        <div class="box2">
+          2
+        </div>
+      </div>
+      footer
+    </div>
+  </div>
+  <script>
+    function openFooter(params) {
+      let box1 = document.querySelector('.box1');
+      box1.style.display = (box1.style.display == "") ? "flex" : "";
+      console.log(box1.style.display);
+    }
+    let bt = document.querySelector('button');
+    bt.addEventListener('click', openFooter)
+      // bt.onclick = openFooter();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="layout float">
+        <style>
+            .layout.float .left {
+                float: left;
+                width: 300px;
+                background-color: red;
+                overflow: hidden;
+            }
+            
+            .layout.float .right {
+                float: right;
+                width: 300px;
+                background-color: blue;
+            }
+        </style>
+        <article class="left-right-center">
+            <div class="left">1</div>
+            <div class="right">2</div>
+            <div class="center">
+                <h2>我是【浮动定位】的三栏布局</h2>
+                <p>富强、民主、文明、和谐</p>
+                <p>自由、平等、公正、法治</p>
+                <p>爱国、敬业、诚信、友善</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="layout absolute">
+        <style>
+            .layout.absolute article>div {
+                position: absolute;
+            }
+            
+            .layout.absolute .left {
+                left: 0;
+                width: 300px;
+            }
+            
+            .layout.absolute .right {
+                right: 0;
+                width: 300px;
+            }
+            
+            .layout.absolute .center {
+                left: 300px;
+                right: 300px;
+            }
+        </style>
+        <article class="left-center-right">
+            <div class="left">
+                <h2>我是【绝对定位】的left</h2>
+                <p>富强、民主、文明、和谐</p>
+                <p>自由、平等、公正、法治</p>
+                <p>爱国、敬业、诚信、友善</p>
+                <p>爱国、敬业、诚信、友善</p>
+            </div>
+            <div class="center">
+                <h2>我是【绝对定位】的三栏布局</h2>
+                <p>富强、民主、文明、和谐</p>
+                <p>自由、平等、公正、法治</p>
+                <p>爱国、敬业、诚信、友善</p>
+            </div>
+            <div class="right">2</div>
+        </article>
+    </section>
+
+    <section class="layout flex" style="margin-top: 140px;">
+        <style>
+            .layout.flex article {
+                display: flex;
+            }
+            
+            .layout.flex .left {
+                width: 300px;
+            }
+            
+            .layout.flex .right {
+                width: 300px;
+            }
+            
+            .layout.flex .center {
+                flex: 1;
+            }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <h2>我是【flex】的三栏布局</h2>
+                <p>富强、民主、文明、和谐</p>
+                <p>自由、平等、公正、法治</p>
+                <p>爱国、敬业、诚信、友善</p>
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
+</body>
+
+</html>
