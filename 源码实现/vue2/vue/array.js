@@ -10,7 +10,7 @@ ARR_METHODS.map(function(m) {
     var newArr;
     switch (m) {
       case 'push':
-        // newArr = args;
+        newArr = args;
         break;
       case 'unshift':
         newArr = args;
